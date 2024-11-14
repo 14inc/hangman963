@@ -20,6 +20,10 @@ Also, run <code>python3 milestone_3.py</code> to see the version of this solutio
 
 Next, run <code>python3 milestone_4.py</code> to see the version of this solution that incorporates the use of Python classes. It also offers more feedback to the user that helps their guessing.
 
+Finally, run <code>python3 milestone_5.py</code> to see the final version of this solution that ties all concepts used together. Please note that it has limitations that makes it run in an infinite loop. This is as a result of the instructions provided in the project guidance.
+
+Feel free to edit the code to remove these limitations
+
 ## FILE STRUCTURE OF THE PROJECT
 What does this even look like?
 
