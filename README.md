@@ -18,6 +18,8 @@ On your Terminal, run <code>python3 milestone_2.py</code>
 
 Also, run <code>python3 milestone_3.py</code> to see the version of this solution that incorporates the use of Python functions.
 
+Next, run <code>python3 milestone_4.py</code> to see the version of this solution that incorporates the use of Python classes. It also offers more feedback to the user that helps their guessing.
+
 ## FILE STRUCTURE OF THE PROJECT
 What does this even look like?
 
