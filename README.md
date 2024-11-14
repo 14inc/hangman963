@@ -16,7 +16,9 @@ No installation required. Just zip the project and unzip it on your local machin
 ## USAGE INSTRUCTIONS
 On your Terminal, run <code>python3 milestone_2.py</code>
 
-## FILE STRUCTURE OF OBJECT
+Also, run <code>python3 milestone_3.py</code> to see the version of this solution that incorporates the use of Python functions.
+
+## FILE STRUCTURE OF THE PROJECT
 What does this even look like?
 
 ## LICENSE INFORMATION
