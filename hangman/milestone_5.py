@@ -1,8 +1,17 @@
 import random
 
 class Hangman:
+    '''
+    This class is used to represent a hangman game.
 
-    # ['apple', 'kiwi', 'orange', 'pear', 'plum']
+    Attributes:
+        word(str): The word to be guessed, picked randomly from the word_list.
+        word_guessed (list): A list of the letters of the word, with _ for each letter not yet guessed.
+        num_letters(int): The number of UNIQUE letters in the word that have not been guessed yet.
+        num_lives(int): The number of lives the player has at the start of the game.
+        word_list(list): A list of words.
+        list_of_guesses(list): A list of the guesses that have already been tried.
+    '''
 
     def __init__(self, word_list, num_lives = 5):
         self.word = random.choice(word_list)
@@ -13,6 +22,15 @@ class Hangman:
         self.list_of_guesses = []
 
     def check_guess(self, guess):
+        '''
+        This method checks if the letter entered by the user is in the word to be guessed.
+
+        Args:
+            guess(str): the letter guessed by the user
+
+        Returns:
+            None
+        '''
         guess = guess.lower()
 
         if guess in self.word:
@@ -28,6 +46,15 @@ class Hangman:
             print(f"You have {self.num_lives} lives left.")
 
     def ask_for_input(self):
+        '''
+        This method will ask the user to guess a letter that should be in the word.
+
+        Args:
+            None
+
+        Returns:
+            None
+        '''
         while True:
             guess = input("Guess a letter...\n")
             
@@ -40,6 +67,15 @@ class Hangman:
                 self.list_of_guesses.append(guess)
 
 def play_game(word_list):
+    '''
+        This function will moderate the Hangman game that is being played by the user.
+
+        Args:
+            word_list: A list of possible words that the computer will randomly choose from.
+
+        Returns:
+            None
+    '''
     num_lives = 5
 
     game = Hangman(word_list, num_lives)
